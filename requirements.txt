@@ -1,0 +1,6 @@
+six
+bistiming
+numpy
+
+pylint
+tox

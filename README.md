@@ -1,2 +1,2 @@
-# serialtime
-A Python serialization tool containing many serialization shortcuts with timing.
+# SerialTime
+A Python serialization tool containing many serialization and deserialization shortcuts with timing.
