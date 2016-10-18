@@ -1,10 +1,12 @@
+from copy import deepcopy
+
 import numpy as np
 
 
 class PartialPreprocessedDataset(object):
     def __init__(self, dataset, idx, shape, preprocess_func=None):
         self._dataset = dataset
-        self._idx = idx.copy()
+        self._idx = deepcopy(idx)
         self.shape = (len(idx),) + shape
         self._preprocess_func = preprocess_func
 
