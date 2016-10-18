@@ -19,13 +19,20 @@ else:
         'numpy',
     ]
 
+description = ("A Python serialization tool containing many serialization "
+               "and deserialization shortcuts with timing."),
+readme_path = os.path.join(os.path.dirname(__file__), "README.md")
+try:
+    import pypandoc
+    long_description = pypandoc.convert_file(readme_path, 'rst')
+except ImportError:
+    long_description = ""
+
 setup(
     name='serialtime',
     version="0.1.0",
-    description=("A Python serialization tool containing many "
-                 "serialization shortcuts with timing."),
-    long_description=("A Python serialization tool containing many "
-                      "serialization shortcuts with timing."),
+    description=description,
+    long_description=long_description,
     author='ianlini',
     url='https://github.com/ianlini/serialtime',
     setup_requires=setup_requires,

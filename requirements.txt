@@ -4,3 +4,4 @@ numpy
 
 pylint
 tox
+pypandoc
