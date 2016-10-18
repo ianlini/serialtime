@@ -8,6 +8,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 if on_rtd:
     setup_requires = []
     install_requires = []
+    tests_require = []
 else:
     setup_requires = [
         'nose',
@@ -17,6 +18,10 @@ else:
         'six',
         'bistiming',
         'numpy',
+    ]
+    tests_require = [
+        'scikit-learn',
+        'scipy',
     ]
 
 description = ("A Python serialization tool containing many serialization "
@@ -37,6 +42,7 @@ setup(
     url='https://github.com/ianlini/serialtime',
     setup_requires=setup_requires,
     install_requires=install_requires,
+    tests_require=tests_require,
     classifiers=[
         'Topic :: Utilities',
         'Programming Language :: Python :: 2.7',
