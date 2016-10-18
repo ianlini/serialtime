@@ -26,12 +26,8 @@ else:
 
 description = ("A Python serialization tool containing many serialization "
                "and deserialization shortcuts with timing."),
-readme_path = os.path.join(os.path.dirname(__file__), "README.md")
-try:
-    import pypandoc
-    long_description = pypandoc.convert_file(readme_path, 'rst')
-except ImportError:
-    long_description = ""
+long_description = ("See `github <https://github.com/ianlini/serialtime>`_ "
+                    "for more information.")
 
 setup(
     name='serialtime',

@@ -1,10 +1,10 @@
 # SerialTime
 SerialTime is a Python serialization tool containing many serialization and deserialization shortcuts with timing. There are many modules that can serialize Python object such as:
-- [Joblib](https://pythonhosted.org/joblib/)
-- [PyYAML](http://pyyaml.org/)
-- [Python built-in pickle/cPickle](https://docs.python.org/3/library/pickle.html)
-- [Python built-in json](https://docs.python.org/3/library/json.html)
-- [Python built-in pickle/cPickle + gzip](https://docs.python.org/3/library/gzip.html)
+* [Joblib](https://pythonhosted.org/joblib/)
+* [PyYAML](http://pyyaml.org/)
+* [Python built-in pickle/cPickle](https://docs.python.org/3/library/pickle.html)
+* [Python built-in json](https://docs.python.org/3/library/json.html)
+* [Python built-in pickle/cPickle + gzip](https://docs.python.org/3/library/gzip.html)
 
 However, remembering their API is very difficult, and there are many differences in their API.
 For example, `json.dump` only accept file-like object as its argument, so we need to open the file first, and then give the function the file-like object, while `joblib.dump` only accept file path as its argument.
@@ -15,12 +15,12 @@ In addition, we use [BisTiming](https://github.com/ianlini/bistiming) to calcula
 
 
 ## Installation
-- Install `serialtime`
+* Install `serialtime`
   ```bash
   pip install serialtime
   ```
 
-- If you want to use `save_joblib_pkl` or `load_joblib_pkl`:
+* If you want to use `save_joblib_pkl` or `load_joblib_pkl`:
   ```
   pip install scikit-learn scipy
   ```
@@ -28,7 +28,7 @@ In addition, we use [BisTiming](https://github.com/ianlini/bistiming) to calcula
 
 ## Documentation
 ### Shortcuts
-- Python built-in pickle/cPickle
+* Python built-in pickle/cPickle
 
   ```python
   serialtime.save_pkl(obj, path, log_description=None, logger=None,
@@ -41,7 +41,7 @@ In addition, we use [BisTiming](https://github.com/ianlini/bistiming) to calcula
                             verbose_end=True, end_in_new_line=True, log_prefix="...")
   ```
 
-- Python built-in pickle/cPickle + gzip
+* Python built-in pickle/cPickle + gzip
 
   ```python
   serialtime.save_pklgz(obj, path, log_description=None, logger=None,
@@ -54,7 +54,7 @@ In addition, we use [BisTiming](https://github.com/ianlini/bistiming) to calcula
                               verbose_end=True, end_in_new_line=True, log_prefix="...")
   ```
 
-- Joblib
+* Joblib
 
   ```python
   serialtime.save_joblib_pkl(obj, path, log_description=None, logger=None,
@@ -136,5 +136,5 @@ IndexError: list index out of range
 ```
 
 ## Testing
-- For the current environment: `python setup test`.
-- For Python 2.7.12, 3.4.5, 3.5.2 and installation test: `tox`.
+* For the current environment: `python setup test`.
+* For Python 2.7.12, 3.4.5, 3.5.2 and installation test: `tox`.
