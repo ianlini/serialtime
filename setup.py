@@ -25,7 +25,7 @@ else:
     ]
 
 description = ("A Python serialization tool containing many serialization "
-               "and deserialization shortcuts with timing."),
+               "and deserialization shortcuts with timing.")
 long_description = ("See `github <https://github.com/ianlini/serialtime>`_ "
                     "for more information.")
 
