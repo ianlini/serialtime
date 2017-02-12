@@ -26,12 +26,17 @@ else:
 
 description = ("A Python serialization tool containing many serialization "
                "and deserialization shortcuts with timing.")
-long_description = ("See `github <https://github.com/ianlini/serialtime>`_ "
-                    "for more information.")
+
+long_description = """\
+Please visit  the `GitHub repository <https://github.com/ianlini/serialtime>`_
+for more information.\n
+"""
+with open('README.rst') as fp:
+    long_description += fp.read()
 
 setup(
     name='serialtime',
-    version="0.1.0",
+    version="0.1.1",
     description=description,
     long_description=long_description,
     author='ianlini',
