@@ -1,5 +1,12 @@
 SerialTime
 ==========
+.. image:: https://img.shields.io/travis/ianlini/serialtime/master.svg
+   :target: https://travis-ci.org/ianlini/serialtime
+.. image:: https://img.shields.io/pypi/v/serialtime.svg
+   :target: https://pypi.python.org/pypi/serialtime
+.. image:: https://img.shields.io/pypi/l/serialtime.svg
+   :target: https://pypi.python.org/pypi/serialtime
+
 SerialTime is a Python serialization tool containing many serialization and deserialization shortcuts with timing. There are many modules that can serialize Python object such as:
 
 - `Joblib <https://pythonhosted.org/joblib/>`_
