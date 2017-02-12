@@ -18,8 +18,8 @@ def try_load_yaml(yaml_path):
             traceback.print_exc()
             # reload or go into ipdb if there's error
             while True:
-                is_try_again = input("Error while loading schedule.yml, "
-                                     "try again ([y]/n)? ")
+                is_try_again = input("Error while loading {}, "
+                                     "try again ([y]/n)? ".format(yaml_path))
                 if is_try_again == "n":
                     raise
                 elif is_try_again == "y" or is_try_again == "":
